@@ -8891,7 +8891,6 @@ body {
 
 /* line 86, book.scss */
 .cast-shadow {
-  min-width: 555px;
   min-height: 64px;
   background: url("../images/cast_shadow.png") no-repeat;
   background-size: cover;
