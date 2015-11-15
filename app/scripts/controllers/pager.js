@@ -11,7 +11,7 @@ angular.module('ahkApp')
   .controller('PagerCtrl', function ($scope, $location) {
     var counter,
         position,
-        pageMax = 18,
+        pageMax = 19,
         vm = this;
 
     // it is better isItShowing to have
