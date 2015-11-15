@@ -3,7 +3,6 @@
 @import "compass/css3/images";
 
 
-
 html { font-size: 62.5%}
 
 body {
@@ -57,7 +56,6 @@ body {
 .straight-cards {
     height: 12px;
     @include background(image-url("cards-straight.png") center bottom no-repeat);
-    background-size: contain;
 }
 
 .title-head {
@@ -86,6 +84,7 @@ body {
 }
 
 .cast-shadow {
+    min-width: 555px;
     min-height: 64px;
     background: url('../images/cast_shadow.png') no-repeat;
     background-size: cover;

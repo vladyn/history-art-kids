@@ -8769,28 +8769,28 @@ button.close {
     display: none !important;
   }
 }
-/* line 7, book.scss */
+/* line 6, book.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 9, book.scss */
+/* line 8, book.scss */
 body {
   background: #f5f5f5 url("../images/bg.jpg");
 }
 
-/* line 13, book.scss */
+/* line 12, book.scss */
 .header {
   height: 4px;
   background: url("../images/topstrip.png");
 }
 
-/* line 18, book.scss */
+/* line 17, book.scss */
 .wrapper {
   padding-top: 3rem;
 }
 
-/* line 22, book.scss */
+/* line 21, book.scss */
 .btn-book {
   width: 55px;
   height: 50px;
@@ -8801,17 +8801,17 @@ body {
   margin-top: 35%;
 }
 
-/* line 32, book.scss */
+/* line 31, book.scss */
 .btn-left {
   background: url(../images/arrow-left.png);
 }
 
-/* line 33, book.scss */
+/* line 32, book.scss */
 .btn-right {
   background: url(../images/arrow-right.png);
 }
 
-/* line 35, book.scss */
+/* line 34, book.scss */
 .book-pages, .book-pages-straight {
   border: 1px solid #b8b8b8;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmNmMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UzZTJkZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -8831,12 +8831,12 @@ body {
   margin-right: 17px;
   border-bottom: 1px solid #d3cfba;
 }
-/* line 44, book.scss */
+/* line 43, book.scss */
 .book-pages section, .book-pages-straight section {
   padding: 12px 16px;
 }
 
-/* line 50, book.scss */
+/* line 49, book.scss */
 .book-pages-straight {
   margin: 0;
   border: 1px solid #b8b8b8;
@@ -8845,14 +8845,13 @@ body {
   border-radius: 11px;
 }
 
-/* line 57, book.scss */
+/* line 56, book.scss */
 .straight-cards {
   height: 12px;
   background: url('/images/cards-straight.png') center bottom no-repeat;
-  background-size: contain;
 }
 
-/* line 63, book.scss */
+/* line 61, book.scss */
 .title-head {
   -moz-border-radius-topleft: 11px;
   -webkit-border-top-left-radius: 11px;
@@ -8872,14 +8871,14 @@ body {
   -webkit-box-shadow: 0 1px 0 #98b7de #333333;
   box-shadow: 0 1px 0 #98b7de #333333;
 }
-/* line 72, book.scss */
+/* line 70, book.scss */
 .title-head h1 {
   margin-top: 0;
   padding-top: 0;
   font-size: 2rem;
 }
 
-/* line 79, book.scss */
+/* line 77, book.scss */
 .book-wrapper {
   padding: 0 48px 18px 48px;
   min-height: 271px;
@@ -8890,8 +8889,9 @@ body {
   background: url('/images/cards-left.png') left bottom no-repeat, url('/images/cards-right.png') right bottom no-repeat, url('/images/cards-bottom.png') bottom center repeat-x, linear-gradient(to bottom, #f3f2ec, #e8e7e3);
 }
 
-/* line 88, book.scss */
+/* line 86, book.scss */
 .cast-shadow {
+  min-width: 555px;
   min-height: 64px;
   background: url("../images/cast_shadow.png") no-repeat;
   background-size: cover;
