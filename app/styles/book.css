@@ -8769,28 +8769,28 @@ button.close {
     display: none !important;
   }
 }
-/* line 4, book.scss */
+/* line 6, book.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 6, book.scss */
+/* line 8, book.scss */
 body {
   background: #f5f5f5 url("../images/bg.jpg");
 }
 
-/* line 10, book.scss */
+/* line 12, book.scss */
 .header {
   height: 4px;
   background: url("../images/topstrip.png");
 }
 
-/* line 15, book.scss */
+/* line 17, book.scss */
 .wrapper {
   padding-top: 3rem;
 }
 
-/* line 19, book.scss */
+/* line 21, book.scss */
 .btn-book {
   width: 55px;
   height: 50px;
@@ -8800,34 +8800,38 @@ body {
   border: none;
 }
 
-/* line 28, book.scss */
+/* line 30, book.scss */
 .btn-left {
   background: url(../images/arrow-left.png);
 }
 
-/* line 29, book.scss */
+/* line 31, book.scss */
 .btn-right {
   background: url(../images/arrow-right.png);
 }
 
-/* line 31, book.scss */
+/* line 33, book.scss */
 .book-pages {
   border: 1px solid #b8b8b8;
-  background: #fefcf3;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #fefcf3 0%, #e3e2de 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #fefcf3 0%, #e3e2de 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #fefcf3 0%, #e3e2de 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.75), inset 0 -4px 6px 4px rgba(255, 255, 255, 0.85);
-  -moz-border-radius: 11px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmNmMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UzZTJkZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefcf3), color-stop(100%, #e3e2de));
+  background-image: -moz-linear-gradient(top, #fefcf3 0%, #e3e2de 100%);
+  background-image: -webkit-linear-gradient(top, #fefcf3 0%, #e3e2de 100%);
+  background-image: linear-gradient(to bottom, #fefcf3 0%, #e3e2de 100%);
+  -moz-box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 0px 1px rgba(255, 255, 255, 0.85);
+  -webkit-box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 0px 1px rgba(255, 255, 255, 0.85);
+  box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 0px 1px rgba(255, 255, 255, 0.85);
+  -moz-border-radius: 11px 11px 0 0;
   -webkit-border-radius: 11px;
-  border-radius: 11px;
+  border-radius: 11px 11px 0 0;
+  min-height: 310px;
+  margin-left: 21px;
+  margin-right: 17px;
+  border-bottom: none;
 }
 
-/* line 42, book.scss */
+/* line 45, book.scss */
 .title-head {
   -moz-border-radius-topleft: 11px;
   -webkit-border-top-left-radius: 11px;
@@ -8846,10 +8850,27 @@ body {
   -webkit-box-shadow: 0 1px 0 #98b7de #333333;
   box-shadow: 0 1px 0 #98b7de #333333;
 }
-/* line 48, book.scss */
+/* line 51, book.scss */
 .title-head h1 {
   margin-top: 0;
   padding-top: 0;
+}
+
+/* line 57, book.scss */
+.book-wrapper {
+  padding: 0 48px 18px 48px;
+  min-height: 271px;
+  background: url('../images/cards-left.png') left bottom no-repeat, url('../images/cards-right.png') right bottom no-repeat, url('../images/cards-bottom.png') bottom center repeat-x;
+  background-color: #e8e7e3;
+}
+
+/* line 67, book.scss */
+.cast-shadow {
+  min-width: 555px;
+  min-height: 64px;
+  background-image: url('../images/cast_shadow.png');
+  background-size: cover;
+  margin-top: -32px;
 }
 
 /*# sourceMappingURL=book.css.map */
