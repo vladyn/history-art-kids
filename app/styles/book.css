@@ -8769,28 +8769,28 @@ button.close {
     display: none !important;
   }
 }
-/* line 6, book.scss */
+/* line 7, book.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 8, book.scss */
+/* line 9, book.scss */
 body {
   background: #f5f5f5 url("../images/bg.jpg");
 }
 
-/* line 12, book.scss */
+/* line 13, book.scss */
 .header {
   height: 4px;
   background: url("../images/topstrip.png");
 }
 
-/* line 17, book.scss */
+/* line 18, book.scss */
 .wrapper {
   padding-top: 3rem;
 }
 
-/* line 21, book.scss */
+/* line 22, book.scss */
 .btn-book {
   width: 55px;
   height: 50px;
@@ -8798,20 +8798,21 @@ body {
   line-height: 8em;
   cursor: pointer;
   border: none;
+  margin-top: 35%;
 }
 
-/* line 30, book.scss */
+/* line 32, book.scss */
 .btn-left {
   background: url(../images/arrow-left.png);
 }
 
-/* line 31, book.scss */
+/* line 33, book.scss */
 .btn-right {
   background: url(../images/arrow-right.png);
 }
 
-/* line 33, book.scss */
-.book-pages {
+/* line 35, book.scss */
+.book-pages, .book-pages-straight {
   border: 1px solid #b8b8b8;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmNmMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UzZTJkZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -8819,19 +8820,35 @@ body {
   background-image: -moz-linear-gradient(top, #fefcf3 0%, #e3e2de 100%);
   background-image: -webkit-linear-gradient(top, #fefcf3 0%, #e3e2de 100%);
   background-image: linear-gradient(to bottom, #fefcf3 0%, #e3e2de 100%);
-  -moz-box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 0px 1px rgba(255, 255, 255, 0.85);
-  -webkit-box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 0px 1px rgba(255, 255, 255, 0.85);
-  box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 0px 1px rgba(255, 255, 255, 0.85);
+  -moz-box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.65), inset 0 -1px 0px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.65), inset 0 -1px 0px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 0 2px 3px rgba(255, 255, 255, 0.65), inset 0 -1px 0px 0px rgba(255, 255, 255, 0.75);
   -moz-border-radius: 11px 11px 0 0;
   -webkit-border-radius: 11px;
   border-radius: 11px 11px 0 0;
   min-height: 310px;
   margin-left: 21px;
   margin-right: 17px;
-  border-bottom: none;
+  border-bottom: 1px solid #d3cfba;
 }
 
-/* line 45, book.scss */
+/* line 47, book.scss */
+.book-pages-straight {
+  margin: 0;
+  border: 1px solid #b8b8b8;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+}
+
+/* line 54, book.scss */
+.straight-cards {
+  height: 12px;
+  min-width: 489px;
+  background: url('/images/cards-straight.png') center bottom no-repeat;
+}
+
+/* line 60, book.scss */
 .title-head {
   -moz-border-radius-topleft: 11px;
   -webkit-border-top-left-radius: 11px;
@@ -8840,35 +8857,38 @@ body {
   -webkit-border-top-right-radius: 11px;
   border-top-right-radius: 11px;
   height: 48px;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzZTVmYyIvPjxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiMyZGI1ZmYiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzU0Y2JmZiIvPjxzdG9wIG9mZnNldD0iOTklIiBzdG9wLWNvbG9yPSIjMjRhYWZmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMzA5MmU3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZDlhNyIvPjxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiNmZjliNDciLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZDE1MSIvPjxzdG9wIG9mZnNldD0iOTklIiBzdG9wLWNvbG9yPSIjZmZhMjIwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTc2ZDBjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('/images/topbar-pattern.png');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b3e5fc), color-stop(1%, #2db5ff), color-stop(50%, #54cbff), color-stop(99%, #24aaff), color-stop(100%, #3092e7));
-  background-image: -moz-linear-gradient(top, #b3e5fc 0%, #2db5ff 1%, #54cbff 50%, #24aaff 99%, #3092e7 100%);
-  background-image: -webkit-linear-gradient(top, #b3e5fc 0%, #2db5ff 1%, #54cbff 50%, #24aaff 99%, #3092e7 100%);
-  background-image: linear-gradient(to bottom, #b3e5fc 0%, #2db5ff 1%, #54cbff 50%, #24aaff 99%, #3092e7 100%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcd9a7), color-stop(1%, #ff9b47), color-stop(50%, #ffd151), color-stop(99%, #ffa220), color-stop(100%, #e76d0c)), url('/images/topbar-pattern.png');
+  background-image: -moz-linear-gradient(top, #fcd9a7 0%, #ff9b47 1%, #ffd151 50%, #ffa220 99%, #e76d0c 100%), url('/images/topbar-pattern.png');
+  background-image: -webkit-linear-gradient(top, #fcd9a7 0%, #ff9b47 1%, #ffd151 50%, #ffa220 99%, #e76d0c 100%), url('/images/topbar-pattern.png');
+  background-image: linear-gradient(to bottom, #fcd9a7 0%, #ff9b47 1%, #ffd151 50%, #ffa220 99%, #e76d0c 100%), url('/images/topbar-pattern.png');
   -moz-box-shadow: 0 1px 0 #98b7de #333333;
   -webkit-box-shadow: 0 1px 0 #98b7de #333333;
   box-shadow: 0 1px 0 #98b7de #333333;
 }
-/* line 51, book.scss */
+/* line 68, book.scss */
 .title-head h1 {
   margin-top: 0;
   padding-top: 0;
 }
 
-/* line 57, book.scss */
+/* line 74, book.scss */
 .book-wrapper {
   padding: 0 48px 18px 48px;
   min-height: 271px;
-  background: url('../images/cards-left.png') left bottom no-repeat, url('../images/cards-right.png') right bottom no-repeat, url('../images/cards-bottom.png') bottom center repeat-x;
-  background-color: #e8e7e3;
+  background: url('/images/cards-left.png') left bottom no-repeat, url('/images/cards-right.png') right bottom no-repeat, url('/images/cards-bottom.png') bottom center repeat-x, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzZjJlYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U4ZTdlMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: url('/images/cards-left.png') left bottom no-repeat, url('/images/cards-right.png') right bottom no-repeat, url('/images/cards-bottom.png') bottom center repeat-x, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f2ec), color-stop(100%, #e8e7e3));
+  background: url('/images/cards-left.png') left bottom no-repeat, url('/images/cards-right.png') right bottom no-repeat, url('/images/cards-bottom.png') bottom center repeat-x, -moz-linear-gradient(top, #f3f2ec, #e8e7e3);
+  background: url('/images/cards-left.png') left bottom no-repeat, url('/images/cards-right.png') right bottom no-repeat, url('/images/cards-bottom.png') bottom center repeat-x, -webkit-linear-gradient(top, #f3f2ec, #e8e7e3);
+  background: url('/images/cards-left.png') left bottom no-repeat, url('/images/cards-right.png') right bottom no-repeat, url('/images/cards-bottom.png') bottom center repeat-x, linear-gradient(to bottom, #f3f2ec, #e8e7e3);
 }
 
-/* line 67, book.scss */
+/* line 83, book.scss */
 .cast-shadow {
   min-width: 555px;
   min-height: 64px;
-  background-image: url('../images/cast_shadow.png');
+  background-image: url('/images/cast_shadow.png');
   background-size: cover;
   margin-top: -32px;
 }
