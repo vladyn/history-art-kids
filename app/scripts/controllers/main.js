@@ -25,6 +25,5 @@
         $rootScope.$broadcast('pager.pagination.visible', {visibility: isItShowing});
         $scope.$on('MainCtrl.progress', function (event, args) {
             vm.progress = args;
-            console.log('event', args);
         });
     });

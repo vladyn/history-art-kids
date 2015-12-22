@@ -39,9 +39,7 @@ angular.module('ahkApp')
       vm.back = counter < 2;
       vm.next = (counter === pageMax);
       position = Math.round(counter) > 0 ? $location.url("/views/" + counter) : counter = 1;
-      vm.progress = progress * counter;
       progressbar = progress * counter;
       $rootScope.$broadcast('MainCtrl.progress', progressbar);
     };
-
   });
