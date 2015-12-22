@@ -10,8 +10,8 @@ body {
 }
 
 .header {
-    height: 4px;
-    background: url('../images/topstrip.png');
+    padding-bottom: 4px;
+    background: url('../images/topstrip.png') bottom left repeat;
 }
 
 .wrapper {

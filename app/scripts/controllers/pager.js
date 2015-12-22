@@ -8,10 +8,12 @@
  * Controller of the ahkApp
  */
 angular.module('ahkApp')
-  .controller('PagerCtrl', function ($scope, $location) {
+  .controller('PagerCtrl', function ($scope, $location, $rootScope) {
     var counter,
         position,
         pageMax = 19,
+        progress = 100 / pageMax,
+        progressbar,
         vm = this;
 
     // it is better isItShowing to have
@@ -37,5 +39,9 @@ angular.module('ahkApp')
       vm.back = counter < 2;
       vm.next = (counter === pageMax);
       position = Math.round(counter) > 0 ? $location.url("/views/" + counter) : counter = 1;
+      vm.progress = progress * counter;
+      progressbar = progress * counter;
+      $rootScope.$broadcast('MainCtrl.progress', progressbar);
     };
+
   });

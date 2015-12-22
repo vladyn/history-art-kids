@@ -8781,8 +8781,8 @@ body {
 
 /* line 12, book.scss */
 .header {
-  height: 4px;
-  background: url("../images/topstrip.png");
+  padding-bottom: 4px;
+  background: url("../images/topstrip.png") bottom left repeat;
 }
 
 /* line 17, book.scss */

@@ -19,10 +19,27 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="header"></div>
+    <div class="header">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{MainCtrl.progress}}%;">
+          </div>
+          <p>{{vm.progress}}</p>
+        </div>
+        <ul class="nav nav-pills" role="navigation">
+            <li><a href="#/">Към началото</a></li>
+            <li><a href="#/views/2">Музеят преди</a></li>
+            <li><a href="#/views/2">Централна зала</a></li>
+            <li><a href="#/views/5">Какво има в музея?</a></li>
+            <li><a href="#/">Зала "Трезор"</a></li>
+            <li><a href="#/views/15">Загадка 1</a></li>
+            <li><a href="#/views/17">Загадка 2</a></li>
+            <li><a href="#/views/19">Карта</a></li>
+        </ul>
+    </div>
 
     <div class="container wrapper">
         <div class="row" ng-controller="PagerCtrl as pager" ng-swipe-left="pager.movePage('next')" ng-swipe-right="pager.movePage('back')">
+        <p>{{pager.progress}}</p>
             <div class="col-sm-2 col-md-2 col-lg-3 hidden-xs text-center" ng-show="pager.isItShowing">
                 <button class="btn-book btn-left" ng-click="pager.movePage('back')" ng-hide="pager.back">Предишна</button>
             </div>
