@@ -32,10 +32,10 @@ angular.module('ahkApp')
 
         $scope.$on('pager.pagination.visible', function(event, args) {
             vm.isItShowing = args.visibility;
-            console.log(args);
         });
 
         vm.movePage = function movePage (direction) {
+            direction === "next" ? counter ++ : counter --;
             vm.back = counter < 2;
             vm.next = (counter === pageMax);
             position = Math.round(counter) > 0 ? $location.url("/views/" + counter) : counter = 1;

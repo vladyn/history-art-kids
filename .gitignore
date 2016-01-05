@@ -13,3 +13,4 @@ ahk.esproj/user.vbey.espressostorage
 .idea/
 ahk.esproj/user.vbey.espressostorage
 *.sublime-workspace
+/*.DS_Store
