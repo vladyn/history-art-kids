@@ -11,7 +11,7 @@ angular.module('ahkApp')
     .controller('PagerCtrl', function ($scope, $location, $rootScope) {
         var counter,
             position,
-            pageMax = 19,
+            pageMax = 26,
             progress = 100 / pageMax,
             progressbar,
             vm = this;
